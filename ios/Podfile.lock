@@ -944,6 +944,17 @@ PODS:
   - React-Mapbuffer (0.73.5):
     - glog
     - React-debug
+  - react-native-skia (0.1.241):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React
+    - React-callinvoker
+    - React-Core
+  - react-native-skia-skottie (2.1.0):
+    - React
+    - React-Core
+    - react-native-skia
+    - SSZipArchive
   - React-nativeconfig (0.73.5)
   - React-NativeModulesApple (0.73.5):
     - glog
@@ -1112,6 +1123,7 @@ PODS:
     - React-logger (= 0.73.5)
     - React-perflogger (= 0.73.5)
   - SocketRocket (0.6.1)
+  - SSZipArchive (2.4.3)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -1167,6 +1179,8 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector-modern`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - "react-native-skia (from `../node_modules/@shopify/react-native-skia`)"
+  - react-native-skia-skottie (from `../node_modules/react-native-skottie`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1204,6 +1218,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   boost:
@@ -1261,6 +1276,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-skia:
+    :path: "../node_modules/@shopify/react-native-skia"
+  react-native-skia-skottie:
+    :path: "../node_modules/react-native-skottie"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1344,6 +1363,8 @@ SPEC CHECKSUMS:
   React-jsinspector: 32db5e364bcae8fca8cdf8891830636275add0c5
   React-logger: 0331362115f0f5b392bd7ed14636d1a3ea612479
   React-Mapbuffer: 7c35cd53a22d0be04d3f26f7881c7fb7dd230216
+  react-native-skia: 64430410d3a7b106d02220f543855dbfee3641ff
+  react-native-skia-skottie: 7dd9ebb1843f76b0370986fc3abefc483ab67a38
   React-nativeconfig: 1166714a4f7ea57a0df5c2cb44fbc70f98d580f9
   React-NativeModulesApple: 726664e9829eb5eed8170241000e46ead269a05f
   React-perflogger: 0dd9f1725d55f8264b81efadd373fe1d9cca7dc2
@@ -1365,8 +1386,9 @@ SPEC CHECKSUMS:
   React-utils: 987a4526a2fc0acdfaf87888adfe0bf9d0452066
   ReactCommon: 2947b0bffd82ea0e58ca7928881152d4c6dae9af
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Yoga: a716eea57d0d3430219c0a5a233e1e93ee931eb7
 
 PODFILE CHECKSUM: 600fddd80f1532c612408bb1bcfbff8fee0d4095
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
